@@ -12,9 +12,8 @@
 		6330FF531ED9F541009C8BD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6330FF511ED9F541009C8BD8 /* Main.storyboard */; };
 		6330FF551ED9F541009C8BD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6330FF541ED9F541009C8BD8 /* Assets.xcassets */; };
 		6330FF581ED9F541009C8BD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6330FF561ED9F541009C8BD8 /* LaunchScreen.storyboard */; };
-		6330FF611EDA0D39009C8BD8 /* Minecrafter.Alt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6330FF5F1EDA0D39009C8BD8 /* Minecrafter.Alt.ttf */; };
-		6330FF621EDA0D39009C8BD8 /* Minecrafter.Reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6330FF601EDA0D39009C8BD8 /* Minecrafter.Reg.ttf */; };
 		6330FF641EDA0F27009C8BD8 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6330FF631EDA0F27009C8BD8 /* btn.wav */; };
+		6330FF661EDA16C2009C8BD8 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6330FF651EDA16C2009C8BD8 /* Minecraft.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +24,8 @@
 		6330FF541ED9F541009C8BD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6330FF571ED9F541009C8BD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6330FF591ED9F541009C8BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6330FF5F1EDA0D39009C8BD8 /* Minecrafter.Alt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecrafter.Alt.ttf; sourceTree = "<group>"; };
-		6330FF601EDA0D39009C8BD8 /* Minecrafter.Reg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecrafter.Reg.ttf; sourceTree = "<group>"; };
 		6330FF631EDA0F27009C8BD8 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
+		6330FF651EDA16C2009C8BD8 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +42,8 @@
 		6330FF411ED9F541009C8BD8 = {
 			isa = PBXGroup;
 			children = (
+				6330FF651EDA16C2009C8BD8 /* Minecraft.ttf */,
 				6330FF631EDA0F27009C8BD8 /* btn.wav */,
-				6330FF5F1EDA0D39009C8BD8 /* Minecrafter.Alt.ttf */,
-				6330FF601EDA0D39009C8BD8 /* Minecrafter.Reg.ttf */,
 				6330FF4C1ED9F541009C8BD8 /* RetroCalc */,
 				6330FF4B1ED9F541009C8BD8 /* Products */,
 			);
@@ -134,10 +131,9 @@
 			files = (
 				6330FF581ED9F541009C8BD8 /* LaunchScreen.storyboard in Resources */,
 				6330FF551ED9F541009C8BD8 /* Assets.xcassets in Resources */,
-				6330FF611EDA0D39009C8BD8 /* Minecrafter.Alt.ttf in Resources */,
+				6330FF661EDA16C2009C8BD8 /* Minecraft.ttf in Resources */,
 				6330FF641EDA0F27009C8BD8 /* btn.wav in Resources */,
 				6330FF531ED9F541009C8BD8 /* Main.storyboard in Resources */,
-				6330FF621EDA0D39009C8BD8 /* Minecrafter.Reg.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
