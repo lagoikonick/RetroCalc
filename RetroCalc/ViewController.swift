@@ -16,11 +16,20 @@ class ViewController: UIViewController {
     var btnSound: AVAudioPlayer!
     
     
+    enum Operation: String {
+        case Devide = "/"
+        case Multiply = "*"
+        case Substrack = "-"
+        case Add = "+"
+        case Empty = "Empty"
+        
+    }
+    
+    var currentOperation = Operation.Empty
     var runningNumber = ""
-    
-    
-    
-    
+    var leftValStr = ""
+    var rightValStr = ""
+    var result = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +70,24 @@ class ViewController: UIViewController {
         
     }
 
+    
+    func processOperation(operation: Operation) {
+        if currentOperation != Operation.Empty{
+            //A user selected operator, but than selected another operator without first entering a number
+            if runningNumber != "" {
+
+                rightValStr = runningNumber
+                runningNumber = ""
+                
+                
+                
+            }
+        }
+        
+        
+    }
+    
+    
 
 }
 
