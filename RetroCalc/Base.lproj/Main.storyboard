@@ -50,7 +50,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hne-AE-F6Q">
-                                <rect key="frame" x="37.5" y="68" width="245" height="33"/>
+                                <rect key="frame" x="37.5" y="65.5" width="245" height="38.5"/>
                                 <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -61,9 +61,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JtK-Mz-tni">
                                         <rect key="frame" x="0.0" y="0.0" width="186" height="54"/>
                                         <state key="normal" image="clear"/>
-                                        <connections>
-                                            <action selector="onClearPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UzZ-hm-wo5"/>
-                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="wXc-93-I5l">
                                         <rect key="frame" x="0.0" y="57" width="186" height="54"/>

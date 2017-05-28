@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         case Substract = "-"
         case Add = "+"
         case Empty = "Empty"
-        case Clear = "Clear"
+        
         
     }
     
@@ -64,7 +64,7 @@ class ViewController: UIViewController {
         
     }
     
-    
+    //операторы калькулятора
     @IBAction func onDevidePressed(sender: AnyObject) {
             processOperation(operation: .Devide)
     }
@@ -77,13 +77,9 @@ class ViewController: UIViewController {
     @IBAction func onAddPressed(sender: AnyObject) {
         processOperation(operation: .Add)
     }
-    @IBAction func onClearPressed(sender: AnyObject) {
-        processOperation(operation: .Clear)
-    }
-    
-    
-    @IBAction func onEqualPressed(sender: AnyObject) {
+        @IBAction func onEqualPressed(sender: AnyObject) {
         processOperation(operation: currentOperation)
+        
     }
     
     func playSound() {
@@ -97,7 +93,7 @@ class ViewController: UIViewController {
     
     
 
-    
+    // выполнение операторов
     func processOperation(operation: Operation) {
     
         playSound()
@@ -118,10 +114,7 @@ class ViewController: UIViewController {
                     result = "\(Double(leftValStr)! + Double(rightValStr)!)"
                 } else if currentOperation == Operation.Substract {
                     result = "\(Double(leftValStr)! - Double(rightValStr)!)"
-                } else if currentOperation == Operation.Clear {
-                    result = "0"
                 }
-                
                 leftValStr = result
                 outputLbl.text = result
                 
