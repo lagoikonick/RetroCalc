@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         case Substract = "-"
         case Add = "+"
         case Empty = "Empty"
+        case Clear = "Clear"
         
     }
     
@@ -51,7 +52,8 @@ class ViewController: UIViewController {
         outputLbl.text = "0"
     
     }
-
+    
+    
     
     @IBAction func numberPressed(sender: UIButton) {
         playSound()
@@ -75,6 +77,9 @@ class ViewController: UIViewController {
     @IBAction func onAddPressed(sender: AnyObject) {
         processOperation(operation: .Add)
     }
+    @IBAction func onClearPressed(sender: AnyObject) {
+        processOperation(operation: .Clear)
+    }
     
     
     @IBAction func onEqualPressed(sender: AnyObject) {
@@ -89,6 +94,8 @@ class ViewController: UIViewController {
         btnSound.play()
         
     }
+    
+    
 
     
     func processOperation(operation: Operation) {
@@ -97,6 +104,7 @@ class ViewController: UIViewController {
         
         if currentOperation != Operation.Empty{
             //A user selected operator, but than selected another operator without first entering a number
+            
             if runningNumber != "" {
 
                 rightValStr = runningNumber
@@ -110,6 +118,8 @@ class ViewController: UIViewController {
                     result = "\(Double(leftValStr)! + Double(rightValStr)!)"
                 } else if currentOperation == Operation.Substract {
                     result = "\(Double(leftValStr)! - Double(rightValStr)!)"
+                } else if currentOperation == Operation.Clear {
+                    result = "0"
                 }
                 
                 leftValStr = result
@@ -119,16 +129,21 @@ class ViewController: UIViewController {
             
             currentOperation = operation
         }   else {
-            //This is the first time when operator has been pressed
-            leftValStr = runningNumber
-            runningNumber = ""
-            currentOperation = operation
-        }
             
-        }
+            //This is the first time when operator has been pressed
+          
+            leftValStr = runningNumber
+            
+            runningNumber = ""
+            
+            currentOperation = operation
         
+        }
         
     }
+    
+    
+}
     
     
 
